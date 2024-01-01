@@ -1,0 +1,61 @@
+
+.fotos{
+    margin: auto;
+    position: inherit;
+}
+
+body{
+    color: black;
+}
+
+.bloco{
+    background-color: rgb(180, 176, 176);
+    color: black;
+    padding: 4px;
+}
+
+.linha{
+    margin: 1%;
+    padding: 3px;
+}
+
+.album{
+    float: left;
+    padding-right: 1%;
+    width: 48px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.centro{
+    text-align: center;
+    font-family: fantasy;
+}
+
+#objetivo{
+    text-align: center;
+    background-color: rgb(180, 176, 176);
+    color: black;
+    padding: 4px;
+}
+
+#escolaridade{
+    float: left;
+    margin: 5%; 
+    align-items: center;
+    padding: 2%;
+    text-align: center;
+    border: 1px black solid;
+}
+
+#habilidades{
+    float:left;
+    text-align: center;
+    margin: 5%;
+    align-items: center;
+    padding: 2%;
+    border: 1px black solid;
+}
