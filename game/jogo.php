@@ -1,6 +1,10 @@
-
-
 <!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
 
 <?php
@@ -29,17 +33,33 @@
         <input type="submit" name="btn-rand" value="Jogar dados!">
 
     </form>
-</body>
 
-</html>
+
 
 
 <?php
     $dado1 = rand(0, 10);
     $dado2 = rand(0, 10);
+    $TrocarNome = "<br><a href='http://localhost/game/inicio.php'>Trocar</a>";
 
     if(isset($_POST["btn-rand"])){
         echo "<br>Resultado do <strong>".$_SESSION["player1"]."</strong> é: ".$dado1;
-        echo "<br>Resultado do <strong>".$_SESSION["player2"]."</strong> é: ".$dado2;
+        echo "<br>Resultado do <strong>".$_SESSION["player2"]."</strong> é: ".$dado2."<br>";
     }
 
+    if(isset($_POST["btn-name"])){
+
+    }
+
+?>
+    <br>
+    <input type="submit" value="Trocar os nomes" id="trocarNome">
+
+</body>
+</html>
+
+<script type="text/javascript">
+    document.getElementById("trocarNome").onclick = function () {
+        location.href = "http://localhost/game/inicio.php";
+    };
+</script>

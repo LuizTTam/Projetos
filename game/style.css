@@ -4,3 +4,18 @@
     padding-bottom: 1%;
     
 }
+
+#resultado{
+    text-align: center;
+    color: red;
+}
+
+.centralizar{
+    margin-top:4%;
+    text-align: center;
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+}
