@@ -40,15 +40,10 @@
 <?php
     $dado1 = rand(0, 10);
     $dado2 = rand(0, 10);
-    $TrocarNome = "<br><a href='http://localhost/game/inicio.php'>Trocar</a>";
 
     if(isset($_POST["btn-rand"])){
         echo "<br>Resultado do <strong>".$_SESSION["player1"]."</strong> é: ".$dado1;
         echo "<br>Resultado do <strong>".$_SESSION["player2"]."</strong> é: ".$dado2."<br>";
-    }
-
-    if(isset($_POST["btn-name"])){
-
     }
 
 ?>
